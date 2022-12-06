@@ -21,27 +21,27 @@ public class ProductRestController {
     @Autowired
     ProductService productService;
 
-    @RequestMapping(value = "/api/customer", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/product", method = RequestMethod.GET)
     public ArrayList<ProductModel> get() {
         return productService.get();
     }
 
-    @RequestMapping(value = "/api/customer", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/product", method = RequestMethod.POST)
     public ProductModel post(@RequestBody ProductModel productModel) {
         return this.productService.post(productModel);
     }
 
-    @RequestMapping(value = "/api/customer/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/product/{id}", method = RequestMethod.GET)
     public Optional<ProductModel> getID(@PathVariable long id) {
         return productService.getID(id);
     }
 
-    @RequestMapping(value = "/api/customer/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/api/product/{id}", method = RequestMethod.PUT)
     public Optional<ProductModel> put(@PathVariable long id, @RequestBody ProductModel productModel) {
         return productService.put(id, productModel);
     }
 
-    @RequestMapping(value = "/api/customer/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/api/product/{id}", method = RequestMethod.DELETE)
     public boolean delete(@PathVariable long id) {
         return productService.delete(id);
     }

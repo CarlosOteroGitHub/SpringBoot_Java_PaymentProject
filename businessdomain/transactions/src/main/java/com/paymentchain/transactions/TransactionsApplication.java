@@ -26,5 +26,6 @@ public class TransactionsApplication {
 /*
 
 URL Swagger: http://localhost:8082/swagger/index.html
+java -jar C:\Users\carlo\.m2\repository\com\paymentchain\businessdomain\transactions\0.0.1-SNAPSHOT\transactions-0.0.1-SNAPSHOT.jar
 
  */

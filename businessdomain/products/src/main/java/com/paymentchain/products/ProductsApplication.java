@@ -26,5 +26,6 @@ public class ProductsApplication {
 /*
 
 URL Swagger: http://localhost:8081/swagger/index.html
+java -jar C:\Users\carlo\.m2\repository\com\paymentchain\businessdomain\products\0.0.1-SNAPSHOT\products-0.0.1-SNAPSHOT.jar
 
- */
+*/

@@ -24,7 +24,8 @@ public class CustomerApplication {
 }
 
 /*
- * 
- * URL Swagger: http://localhost:8080/swagger/index.html
- * 
- */
+
+URL Swagger: http://localhost:8080/swagger/index.html
+java -jar C:\Users\carlo\.m2\repository\com\paymentchain\businessdomain\customer\0.0.1-SNAPSHOT\customer-0.0.1-SNAPSHOT.jar
+
+*/

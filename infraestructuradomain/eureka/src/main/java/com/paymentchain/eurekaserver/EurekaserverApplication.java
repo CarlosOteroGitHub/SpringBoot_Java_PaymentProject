@@ -12,3 +12,9 @@ public class EurekaserverApplication {
         SpringApplication.run(EurekaserverApplication.class, args);
     }
 }
+
+/*
+
+java -jar C:\Users\carlo\.m2\repository\com\paymentchain\infraestructuradomain\eurekaserver\0.0.1-SNAPSHOT\eurekaserver-0.0.1-SNAPSHOT.jar
+ 
+*/
