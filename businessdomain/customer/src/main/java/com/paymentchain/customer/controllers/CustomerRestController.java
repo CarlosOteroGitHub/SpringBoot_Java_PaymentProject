@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 public class CustomerRestController {
@@ -47,7 +48,7 @@ public class CustomerRestController {
     }
     
     @RequestMapping(value = "/api/customer/full", method = RequestMethod.GET)
-    public CustomerModel getProducts(@PathVariable String code) {
+    public CustomerModel getProducts(@RequestParam String code) {
         return customerService.getProducts(code);
     }
 }

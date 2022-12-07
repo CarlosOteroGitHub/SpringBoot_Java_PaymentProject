@@ -10,6 +10,9 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface CustomerRepository extends JpaRepository<CustomerModel, Long> {
 
-    @Query(value = "SELECT c FROM CustomerModel c WHERE c.code = ?1", nativeQuery = true)
+    @Query(value = "SELECT c FROM CustomerModel c WHERE c.code = ?1")
     public CustomerModel findByCode(String code);
+    
+    @Query(value = "SELECT c FROM CustomerModel c WHERE c.lban = ?1")
+    public CustomerModel findBylban(String lban);
 }
