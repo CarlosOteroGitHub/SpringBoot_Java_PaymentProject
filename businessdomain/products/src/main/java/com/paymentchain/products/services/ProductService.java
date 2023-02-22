@@ -9,6 +9,7 @@ import com.paymentchain.products.repositories.ProductRepository;
 import java.util.ArrayList;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,9 +17,14 @@ public class ProductService {
 
     @Autowired
     ProductRepository productRepository;
+    
+    //Variable extraida del archivo config-client especificado en el archivo bootstrap.yml
+    @Value("${user.role}")
+    private String role;
 
     //Estructura de la función GET para retornar todos los registros de la tabla "product".
     public ArrayList<ProductModel> get() {
+        System.out.println("El rol es: " + role);
         return (ArrayList<ProductModel>) productRepository.findAll();
     }
 
