@@ -106,7 +106,7 @@
     <build>
         <plugins>
             <!-- Tghis plugin generate reports in two differents forma .txt and xml 
-            in test phase when build life cicle is execuite -->
+            in test phase when build life cicle is execuite 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -115,7 +115,7 @@
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
-            <!-- It is the spring-boot repackage goal that repackages the JAR produced 
+            It is the spring-boot repackage goal that repackages the JAR produced 
             by maven to specify the main class and make it executable using an embedded container -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -150,7 +150,7 @@
                         <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>
                 </configuration>
-            </plugin> -->
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
@@ -165,7 +165,7 @@
                 <version>3.2.0</version>
                 <configuration> </configuration>
             </plugin>
-            <!-- generate project code documentation -->
+             generate project code documentation -->
             <!--   <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
